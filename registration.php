@@ -9,7 +9,7 @@
 <div>
 
     <h3>Please enter your details</h3>
-    <form action="/process_registration.php">
+    <form action="process_registration.php" method="post">
     Username:<br>
     <input type="text" name="username"> <br>
     Password<br>
