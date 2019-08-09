@@ -13,22 +13,24 @@ $username = $_POST["username"];
 $password = $_POST["password"];
 
 //select from user_accounts table
-$sql = "select * FROM user_accounts";
-
+$sql = "select * from user_accounts where username='$username' and password='$password'";
 $result = mysqli_query($connection, $sql);
 
-$row = mysqli_fetch_assoc($result);
 
-$accounts = "";
 
-while($row = $result->fetch_array(MYSQLI_NUM)){
-    $accounts .= <<<END
-    <P>$row[0]</p>
-    <p>$row[1]</p>
-    <p>$row[2]</p>
+
+//testing if I could get table data
+//$accounts = "";
+
+// while($row = $result->fetch_array(MYSQLI_NUM)){
+//     $accounts .= <<<END
+//     <P>$row[0]</p>
+//     <p>$row[1]</p>
+//     <p>$row[2]</p>
     
-END;
-}
+// END;
+// }
+
 
 
 $result->close();
