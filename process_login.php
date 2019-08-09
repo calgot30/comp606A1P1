@@ -26,7 +26,7 @@ while($row = $result->fetch_array(MYSQLI_NUM)){
     <P>$row[0]</p>
     <p>$row[1]</p>
     <p>$row[2]</p>
-    echo $accounts;
+    
 END;
 }
 
