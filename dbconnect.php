@@ -21,4 +21,5 @@ if($connection == false) {
     header('Location: failed_to_connect.php');
 }
 
+
 ?>
