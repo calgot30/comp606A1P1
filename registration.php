@@ -6,8 +6,9 @@
     a new username and password.  After which they are 
     redirected to the process_registration page which
     adds their information into the user_accounts
-    table.  Then they are redirected to the homepage and
-    can then log out and log back in with the new user.
+    table.  Then they are redirected to the process_registration
+    page and are then taken to the homepage.
+    
     -->
 <head>
     <title>Registration Page For A1P1</title>

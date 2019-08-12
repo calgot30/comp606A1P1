@@ -11,7 +11,9 @@ to be processed and they will have to fill out the
 parts of the form they left empty.
 If they successfully fill out the form they will be sent to 
 another page which will check their details against a user 
-database and see if their details are correct. -->
+database and see if their details are correct. If not they
+will be sent to a separate page which re-directs them back here. 
+They can also follow the link to register as a new user.-->
 
 <?php
 require_once("dbconnect.php");
@@ -22,6 +24,7 @@ require_once("dbconnect.php");
 
 <div>
 
+    <!--Form for login details -->
     <h3>Please enter your details</h3>
     <form action="processing_login.php" method="post">
     <p><span>*required fields</span></p>

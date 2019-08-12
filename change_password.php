@@ -1,10 +1,12 @@
 <?php
 
-//takes the login details from login.php and checks
-//them against the database to see if they are correct, if 
-//they match then they will be redirected to a homepage
-//where they can log out and
-//also change their password if they wish.
+//this page processes the password change form that the user 
+//has filled out and sent here, it checks the username
+//and the old password, and then the new password they put in
+//will replace the old one, and then they will be sent to a
+//password confirmation page which will tell them they need to
+//log in again.
+
 
 require_once("dbconnect.php");
 
@@ -17,6 +19,7 @@ $newPass = $_POST["new_password"];
 $query = "UPDATE user_accounts SET password='$newPass' WHERE username='$user'";
 $result = $connection->query($query);
 
+//directs the user to the specified page after all the code has run
 header("location: reset_confirmed.php");
 
 ?>

@@ -1,4 +1,8 @@
 <?php
+/*This page lets the user know that their password reset
+has been successful. and that they will have to login again
+from the login page, they click the buttona and are redirected
+there. */
 require_once("dbconnect.php");
 ?>
 

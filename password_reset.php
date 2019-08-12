@@ -13,15 +13,15 @@ if(!isset($_SESSION['logged_in_user'])){
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 
-<!--  this page asks the user for login information
-if the user doesn't fill in a field the form will be unable
-to be processed and they will have to fill out the 
-parts of the form they left empty.
-After they have entered their username and password and their
-new password, they will be re-directed to a page telling them
-that their password has been changed and they will have
-to log in again. -->
-
+<!--
+asks the user to re-enter their username and current
+password, then they also have to enter their new password.
+if their username and password are correct then their 
+password will be changed to the new password that they
+specified, they are then redirected to the reset_confirmed 
+page letting them know that they have changed their password
+and will be redirected to the login page to log in again.
+-->
 
 
 
@@ -29,6 +29,8 @@ to log in again. -->
 
 <div>
 
+<!-- Form that lets the user change their password. Or if they
+    change their mind they can go back to the homepage.   -->
     <h3>Please enter your details</h3>
     <form action="change_password.php" method="post">
     <p><span>*required fields</span></p>

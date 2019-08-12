@@ -1,4 +1,10 @@
 <?php
+
+//this page processes the form that lets a new user register.
+//it queries the database, then it inserts the new user into the
+//table and starts a unique session for them. Then redirects them
+//to the email-confirmation page letting them know
+//their registration was a success.
 require_once("dbconnect.php");
 
 //variables for user info

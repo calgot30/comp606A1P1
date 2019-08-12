@@ -26,7 +26,8 @@ $row = $result->fetch_array(MYSQLI_ASSOC);
 if(!$row){
     header("location: incorrect_password.php");
 }
-//if it does match
+//if it does match, creates a new unique session id for the user
+//and redirects them to the homepage.
 else{
     session_start();
 	 $_SESSION['logged_in_user']=$user;
@@ -35,6 +36,13 @@ else{
 	header('location: homepage.php');;
 }
 
+
+/* These loops were attempts to create a loop to iterate through
+the array. I found the solutions from:
+
+Nixon, R. (2018). Learning PHP, mysql, and javascript,
+with jquery, css, and html5.
+practical MySQL, 255*/
 
 // for($j = 0 ; $j < $rows ; ++$j){
 // if($row['username'] == $user && $row['password'] == $pass){
@@ -45,11 +53,6 @@ else{
 // }
 // }
 
-
-
-
-
-
 // for($j = 0 ; $j < $rows ; ++$j){
 //     $row = $result->fetch_array(MYSQLI_ASSOC);
 //     //$result->data_seek($j);
@@ -57,12 +60,6 @@ else{
 //     //$result->data_seek($j);
 //     echo 'Password: '.($row['password']) .'<br>';
 // }
-
-
-
-
-
-
 
 // for($j = 0 ; $j < $rows ; ++$j){
 //     $row = $result->fetch_array(MYSQLI_ASSOC);

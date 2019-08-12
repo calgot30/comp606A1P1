@@ -1,4 +1,9 @@
 <?php
+
+//this page checks to see if the user has registered and
+//their session id has been set, and 
+//then they are told that they can get to the website by pressing
+//the button to redirect them to the homepage.
 require_once("dbconnect.php");
 session_start();
 //checks if the user has logged in and has unique session
@@ -15,6 +20,10 @@ if(!isset($_SESSION['logged_in_user'])){
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 
+<!--
+    Lets the user know they have created an account, then they
+    can press a button to go to a homepage.
+    -->
 <h3> This is a confirmation email to let you know that 
      you have successfully created an account.  Press this button
      to proceed to the website. </h3>
