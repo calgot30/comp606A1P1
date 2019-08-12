@@ -1,19 +1,20 @@
 <?php
 require_once("dbconnect.php");
 
-$id = null;
+//variables for user info
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-$statement = $mysqli->prepare("INSERT INTO user_accounts(username,
-password) values(?, ?)");
+//inserts the new info into the table
+$query = "INSERT INTO user_accounts VALUES(NULL, '$username', '$password')";
+$result = $connection->query($query);
 
-$statement->bind_param("ss", $username, $password);
-$statement->execute();
 
-if($statement->affected_rows == 1){
-    echo "<p>user added</p>";
-}
 
-$statement->close();
+//starts the session with their unique session ID
+    session_start();
+    $_SESSION['logged_in_user']=$username; 
+   header('location: email_confirmation.php');;
+
+
 ?>

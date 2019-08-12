@@ -1,5 +1,14 @@
 <html>
 
+
+<!--
+    After the user has gone to this page, they have to enter 
+    a new username and password.  After which they are 
+    redirected to the process_registration page which
+    adds their information into the user_accounts
+    table.  Then they are redirected to the homepage and
+    can then log out and log back in with the new user.
+    -->
 <head>
     <title>Registration Page For A1P1</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
@@ -23,7 +32,7 @@ require_once("dbconnect.php");
     <input type="password" name="password">
     <span>* </span>
     <br><br>
-    <button type="submit" value="login">Login</button>
+    <button type="submit" value="login">Signup</button>
 </form>
 </div>
 

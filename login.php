@@ -23,7 +23,7 @@ require_once("dbconnect.php");
 <div>
 
     <h3>Please enter your details</h3>
-    <form action="process_login.php" method="post">
+    <form action="processing_login.php" method="post">
     <p><span>*required fields</span></p>
     Username:<br>
     <input type="text" name="username"> 
