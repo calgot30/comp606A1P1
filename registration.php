@@ -13,6 +13,21 @@
 <head>
     <title>Registration Page For A1P1</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+<!--Javascript function to check the text boxes in the forms
+    if they are empty, the script will trigger an event, 
+    a pop up box will tell the user to fill in the empty text
+    boxes. They will not be able to continue until they do so.-->
+    <script>
+function validateForm(){
+    var x = document.forms["myForm"]["username"].value;
+    var y = document.forms["myForm"]["password"].value;
+    if(x == "" || y == ""){
+        alert("Name and password must be filled out");
+        return false;
+    }
+}
+</script>
 </head>
 
 <?php
@@ -23,7 +38,8 @@ require_once("dbconnect.php");
 <div>
 
     <h3>Please enter your details</h3>
-    <form action="process_registration.php" method="post">
+    <form name ="myForm" action="process_registration.php"
+          onsubmit="return validateForm()" method="post">
     <p><span>*required fields</span></p>
     Username:<br>
     <input type="text" name="username"> 
