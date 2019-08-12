@@ -29,6 +29,7 @@ function validateForm(){
 </script>
 </head>
 
+<body>
 <!--
 asks the user to re-enter their username and current
 password, then they also have to enter their new password.
@@ -70,5 +71,5 @@ and will be redirected to the login page to log in again.
 </form>
 </div>
 
-
+</body>
 </html>

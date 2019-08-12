@@ -17,16 +17,18 @@ if(!isset($_SESSION['logged_in_user'])){
 
 <head>
     <title>email confirmation page For A1P1</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet_homepage.css" />
 </head>
-
+<body>
 <!--
     Lets the user know they have created an account, then they
     can press a button to go to a homepage.
     -->
+    <div>
 <h3> This is a confirmation email to let you know that 
      you have successfully created an account.  Press this button
      to proceed to the website. </h3>
      <a href="homepage.php"> <button type="submit" value="redirect">Return to Login</button></a>
-
+     <div>
+</body>
 </html>

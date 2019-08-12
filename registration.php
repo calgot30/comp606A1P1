@@ -1,3 +1,7 @@
+<?php
+require_once("dbconnect.php");
+?>
+
 <html>
 
 
@@ -29,10 +33,8 @@ function validateForm(){
 }
 </script>
 </head>
+<body>
 
-<?php
-require_once("dbconnect.php");
-?>
 
 
 <div>
@@ -53,5 +55,5 @@ require_once("dbconnect.php");
 </form>
 </div>
 
-
+</body>
 </html>

@@ -26,13 +26,16 @@ if(!isset($_SESSION['logged_in_user'])){
     <link rel="stylesheet" type="text/css" href="stylesheet_homepage.css" />
 </head>
 
+<body>
 <!-- welcomes the user with their unique session ID 
      and navigation menu.-->
-<h1> <?php echo("welcome ".$_SESSION['logged_in_user']."") ?><h1>
+
 <div class="nav header">
+    <h1> <?php echo("welcome ".$_SESSION['logged_in_user']."") ?><h1>
+    &nbsp &nbsp
     <h2>Demo Page 1 &nbsp &nbsp Demo Page 2 &nbsp &nbsp
     <a href="password_reset.php">Change your password</a>
     &nbsp &nbsp
     <a href="logout.php">Log Out</a>
-
+</body>
 </html>

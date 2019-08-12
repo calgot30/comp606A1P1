@@ -1,4 +1,10 @@
+<?php
+require_once("dbconnect.php");
+?>
+
+
 <html>
+
 
 <head>
     <title>Login Page For A1P1</title>
@@ -19,7 +25,7 @@ function validateForm(){
 }
 </script>
 </head>
-
+<body>
 <!--  this page asks the user for login information
 if the user doesn't fill in a field the form will be unable
 to be processed and they will have to fill out the 
@@ -30,9 +36,7 @@ database and see if their details are correct. If not they
 will be sent to a separate page which re-directs them back here. 
 They can also follow the link to register as a new user.-->
 
-<?php
-require_once("dbconnect.php");
-?>
+
 
 
 
@@ -59,5 +63,5 @@ require_once("dbconnect.php");
 </form>
 </div>
 
-
+</body>
 </html>

@@ -1,8 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+}
+
+a{
+    color: aliceblue;
+}
 
 div {
     
     width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
     background-color: #34a1eb;
     padding: 15px;
@@ -14,6 +23,8 @@ div {
 
 form {
     text-align:  center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
 }
 
 button {
